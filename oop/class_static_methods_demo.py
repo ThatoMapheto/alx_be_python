@@ -1,0 +1,18 @@
+# class_static_methods_demo.py
+
+class Calculator:
+    """A class demonstrating the difference between class methods and static methods."""
+
+    # Class attribute
+    calculation_type = "Arithmetic Operations"
+
+    @staticmethod
+    def add(a, b):
+        """Static method that returns the sum of two numbers."""
+        return a + b
+
+    @classmethod
+    def multiply(cls, a, b):
+        """Class method that prints the class attribute and returns the product of two numbers."""
+        print(f"Calculation type: {cls.calculation_type}")
+        return a * b
